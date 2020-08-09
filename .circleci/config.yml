@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: Install dependencies and build project
-          command: cd ./Debug && make clean && make
+          command: cd ./Debug && make clean && make && cd ..
       - sonarcloud/scan
 
 orbs:
