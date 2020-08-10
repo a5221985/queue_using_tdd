@@ -32,7 +32,5 @@
 *.app
 
 # Build directory
-/Debug/google_test_lib
-/Debug/src
-/Debug/test
-/Release/src
+*.gcda
+*.gcno

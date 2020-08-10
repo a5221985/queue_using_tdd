@@ -59,6 +59,8 @@
                                 								
                                 <option id="gnu.cpp.compiler.option.other.verbose.829401932" name="Verbose (-v)" superClass="gnu.cpp.compiler.option.other.verbose" useByScannerDiscovery="false" value="true" valueType="boolean"/>
                                 								
+                                <option id="gnu.cpp.compiler.option.other.other.320873243" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -fprofile-arcs -ftest-coverage" valueType="string"/>
+                                								
                                 <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1874071586" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
                                 							
                             </tool>
@@ -70,6 +72,8 @@
                                 <option defaultValue="gnu.c.debugging.level.max" id="gnu.c.compiler.option.debugging.level.227316072" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" valueType="enumerated"/>
                                 								
                                 <option id="gnu.c.compiler.option.dialect.std.1227200130" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.c.compiler.dialect.default" valueType="enumerated"/>
+                                								
+                                <option id="gnu.c.compiler.option.misc.other.1838707910" name="Other flags" superClass="gnu.c.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -fprofile-arcs -ftest-coverage" valueType="string"/>
                                 								
                                 <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1111616395" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
                                 							
@@ -86,6 +90,8 @@
                                 </option>
                                 								
                                 <option id="gnu.cpp.link.option.debugging.codecov.92456734" name="Generate gcov information (-ftest-coverage -fprofile-arcs)" superClass="gnu.cpp.link.option.debugging.codecov" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+                                								
+                                <option id="gnu.cpp.link.option.flags.817537047" name="Linker flags" superClass="gnu.cpp.link.option.flags" useByScannerDiscovery="false" value="-fprofile-arcs -ftest-coverage" valueType="string"/>
                                 								
                                 <inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1394874848" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
                                     									
@@ -135,6 +141,8 @@
                                 								
                                 <option id="gnu.cpp.compiler.option.other.verbose.1717402813" name="Verbose (-v)" superClass="gnu.cpp.compiler.option.other.verbose" value="true" valueType="boolean"/>
                                 								
+                                <option id="gnu.cpp.compiler.option.other.other.120473908" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 -fprofile-arcs -ftest-coverage" valueType="string"/>
+                                								
                                 <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1837213423" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
                                 							
                             </tool>
@@ -147,6 +155,8 @@
                                 								
                                 <option id="gnu.c.compiler.option.dialect.std.806794896" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.default" valueType="enumerated"/>
                                 								
+                                <option id="gnu.c.compiler.option.misc.other.1613272575" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-c -fmessage-length=0 -fprofile-arcs -ftest-coverage" valueType="string"/>
+                                								
                                 <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.297861801" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
                                 							
                             </tool>
@@ -156,6 +166,8 @@
                             <tool id="cdt.managedbuild.tool.gnu.cpp.linker.base.808790658" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base">
                                 								
                                 <option id="gnu.cpp.link.option.debugging.codecov.1246580163" name="Generate gcov information (-ftest-coverage -fprofile-arcs)" superClass="gnu.cpp.link.option.debugging.codecov" value="true" valueType="boolean"/>
+                                								
+                                <option id="gnu.cpp.link.option.flags.537523002" name="Linker flags" superClass="gnu.cpp.link.option.flags" value="-fprofile-arcs -ftest-coverage" valueType="string"/>
                                 							
                             </tool>
                             							
@@ -195,6 +207,8 @@
                                 								
                                 <option id="gnu.cpp.compiler.option.other.verbose.620011230" name="Verbose (-v)" superClass="gnu.cpp.compiler.option.other.verbose" value="true" valueType="boolean"/>
                                 								
+                                <option id="gnu.cpp.compiler.option.other.other.294275057" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 -fprofile-arcs -ftest-coverage" valueType="string"/>
+                                								
                                 <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1473657065" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
                                 							
                             </tool>
@@ -207,6 +221,8 @@
                                 								
                                 <option id="gnu.c.compiler.option.dialect.std.1019517011" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.default" valueType="enumerated"/>
                                 								
+                                <option id="gnu.c.compiler.option.misc.other.625452149" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-c -fmessage-length=0 -fprofile-arcs -ftest-coverage" valueType="string"/>
+                                								
                                 <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.699023140" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
                                 							
                             </tool>
@@ -216,6 +232,8 @@
                             <tool id="cdt.managedbuild.tool.gnu.cpp.linker.base.154754366" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base">
                                 								
                                 <option id="gnu.cpp.link.option.debugging.codecov.16293511" name="Generate gcov information (-ftest-coverage -fprofile-arcs)" superClass="gnu.cpp.link.option.debugging.codecov" value="true" valueType="boolean"/>
+                                								
+                                <option id="gnu.cpp.link.option.flags.739079175" name="Linker flags" superClass="gnu.cpp.link.option.flags" value="-fprofile-arcs -ftest-coverage" valueType="string"/>
                                 							
                             </tool>
                             							
@@ -418,5 +436,7 @@
     </storageModule>
     	
     <storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+    	
+    <storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
     
 </cproject>

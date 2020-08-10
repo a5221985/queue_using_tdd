@@ -46,7 +46,7 @@ all: tdd_for_cpp_project_poc
 tdd_for_cpp_project_poc: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C++ Linker'
-	g++ -ftest-coverage -fprofile-arcs -o "tdd_for_cpp_project_poc" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -fprofile-arcs -ftest-coverage -ftest-coverage -fprofile-arcs -o "tdd_for_cpp_project_poc" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

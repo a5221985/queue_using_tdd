@@ -5,7 +5,11 @@
  *      Author: am
  */
 
-int main(int argc, char **argv) {
+#include <stdio.h>
+#include "Foo.h"
 
+int main(int argc, char **argv) {
+	Foo foo;
+	printf("%d", foo.foo());
 }
 
