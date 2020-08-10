@@ -35,3 +35,6 @@
 *.gcda
 *.gcno
 /Debug/
+
+!build-wrapper-linux-x86/*.so
+!build-wrapper-macosx-x86/*.dylib
