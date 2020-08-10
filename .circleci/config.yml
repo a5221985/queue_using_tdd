@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: Install dependencies and build project
-          command: cd ./Debug && ../build-wrapper-linux-x86/build-wrapper-linux-x86-64 --out-dir build_wrapper_output_directory make clean all && cd ..
+          command: cd ./Debug && ../build-wrapper-linux-x86/build-wrapper-linux-x86-64 --out-dir build_wrapper_output_directory make clean all && ./tdd_for_cpp_project_poc && cd ..
       - sonarcloud/scan
 
 orbs:
