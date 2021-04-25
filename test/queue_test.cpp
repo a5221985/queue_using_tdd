@@ -14,15 +14,18 @@ class QueueTest: public ::testing::Test {
 protected:
 	Queue<int, 1> *queue;
 	Queue<char, 3> *cQueue;
+	Queue<float, 4> *fQueue;
 
 	virtual void SetUp() {
 		queue = new Queue<int, 1>();
 		cQueue = new Queue<char, 3>();
+		fQueue = new Queue<float, 4>();
 	}
 
 	virtual void TearDown() {
 		delete queue;
 		delete cQueue;
+		delete fQueue;
 	}
 };
 
@@ -130,6 +133,15 @@ TEST_F(QueueTest, charQueue_takesCharItems) {
 
 	ASSERT_EQ('a', cQueue->dequeue());
 	ASSERT_EQ('b', cQueue->dequeue());
+	ASSERT_TRUE(cQueue->isEmpty());
+}
+
+TEST_F(QueueTest, floatQueue_takesFloatItems) {
+	fQueue->enqueue(1.0f);
+	fQueue->enqueue(2.0f);
+
+	ASSERT_FLOAT_EQ(1.0f, fQueue->dequeue());
+	ASSERT_FLOAT_EQ(2.0f, fQueue->dequeue());
 	ASSERT_TRUE(cQueue->isEmpty());
 }
 }
