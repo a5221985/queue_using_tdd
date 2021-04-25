@@ -14,7 +14,7 @@ template<typename T, uint32_t N>
 class Queue {
 public:
 	Queue() {
-		static_assert(N > 0, "Initial size must ne > 0");
+		static_assert(N > 0, "Initial size must be > 0");
 		this->items = new T[size];
 	}
 
