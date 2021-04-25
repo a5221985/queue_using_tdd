@@ -26,14 +26,6 @@ void Queue::enqueue(int item) {
 		head = tail;
 }
 
-void Queue::advanceHead() {
-	head = (head + 1) % size;
-}
-
-void Queue::advanceTail() {
-	tail = (tail + 1) % size;
-}
-
 int Queue::dequeue(void) {
 	if (isEmpty())
 		throw std::out_of_range("Out of range");
@@ -55,6 +47,14 @@ bool Queue::isFull() {
 
 bool Queue::isLastItem() {
 	return tail != -1 && head == tail;
+}
+
+void Queue::advanceHead() {
+	head = (head + 1) % size;
+}
+
+void Queue::advanceTail() {
+	tail = (tail + 1) % size;
 }
 
 void Queue::reset() {
