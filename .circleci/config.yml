@@ -1,0 +1,26 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: 'gcc:latest'
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies and build debug version of the project
+          command: cd ./Debug && ../build-wrapper-linux-x86/build-wrapper-linux-x86-64 --out-dir build_wrapper_output_directory make clean all && ./tdd_for_cpp_project_poc && cd ..
+      - sonarcloud/scan
+      - run:
+          name: Install dependencies and build release version of the project
+          command: cd ./Release && make clean all && cd ..
+      - store_test_results:
+          path: test-results
+
+orbs:
+  sonarcloud: sonarsource/sonarcloud@1.0.1
+
+workflows:
+  main:
+    jobs:
+      - build:
+          context: SonarCloud
