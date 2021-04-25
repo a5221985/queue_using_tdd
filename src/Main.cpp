@@ -6,10 +6,10 @@
  */
 
 #include <stdio.h>
-#include "Foo.h"
+#include "queue.h"
 
 int main(int argc, char **argv) {
-	Foo foo;
-	printf("%d", foo.foo());
+	Queue queue;
+	printf("%b", queue.isEmpty());
 }
 

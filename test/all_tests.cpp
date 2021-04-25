@@ -5,8 +5,8 @@
  *      Author: am
  */
 
+#include <queue.h>
 #include "gtest/gtest.h"
-#include "Foo.h"
 
 int main(int argc, char** argv)
 {
