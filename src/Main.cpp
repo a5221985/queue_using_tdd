@@ -6,10 +6,10 @@
  */
 
 #include <stdio.h>
-#include "queue.h"
+#include "gtest/gtest.h"
 
 int main(int argc, char **argv) {
-	Queue queue;
-	printf("%b", queue.isEmpty());
+	::testing::InitGoogleTest(&argc, argv);
+	return RUN_ALL_TESTS();
 }
 
