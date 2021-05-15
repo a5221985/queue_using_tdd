@@ -46,22 +46,6 @@ public:
 		return item;
 	}
 
-	void resize(void) {
-		int newSize = 2 * size;
-		T *newItems = new T[newSize];
-		int k = 0;
-		while (!isLastItem()) {
-			newItems[k++] = items[head];
-			advanceHead();
-		}
-		newItems[k] = items[head];
-		delete[] items;
-		items = newItems;
-		head = 0;
-		tail = k;
-		size = newSize;
-	}
-
 private:
 	int head = -1;
 	int tail = -1;
@@ -87,6 +71,22 @@ private:
 
 	void advanceTail(void) {
 		tail = (tail + 1) % size;
+	}
+
+	void resize(void) {
+		int newSize = 2 * size;
+		T *newItems = new T[newSize];
+		int k = 0;
+		while (!isLastItem()) {
+			newItems[k++] = items[head];
+			advanceHead();
+		}
+		newItems[k] = items[head];
+		delete[] items;
+		items = newItems;
+		head = 0;
+		tail = k;
+		size = newSize;
 	}
 };
 
