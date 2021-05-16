@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: Install dependencies and build debug version of the project
-          command: cd ./Debug && ../build-wrapper-linux-x86/build-wrapper-linux-x86-64 --out-dir build_wrapper_output_directory make clean all && ./tdd_for_cpp_project_poc && cd ..
+          command: cd ./Debug && ../build-wrapper-linux-x86/build-wrapper-linux-x86-64 --out-dir build_wrapper_output_directory make clean all && ./queue_using_tdd && cd ..
       - sonarcloud/scan
       - run:
           name: Install dependencies and build release version of the project
